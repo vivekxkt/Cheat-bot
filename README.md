@@ -72,27 +72,35 @@ OR
  SCREEN SHOTS WITH USAGE :
 
 1) Open the bot from start menu or RUN or whereever the exe is.
+
  <img width="184" height="151" alt="Screenshot 2025-11-29 145358" src="https://github.com/user-attachments/assets/ba72bad3-b276-4b6e-abef-e6d6557e9621" />
 
-2) Now a black small popup will appear at the top left corner of the screen 
+3) Now a black small popup will appear at the top left corner of the screen
+
 <img width="436" height="299" alt="Screenshot 2025-11-29 145459" src="https://github.com/user-attachments/assets/103431f2-d0a5-45aa-a10d-fc3840a24b71" />
 
-3) Now type name of the file among the following files I've already created without the .TXT extension and hit ENTER ( you can create your own files )
+5) Now type name of the file among the following files I've already created without the .TXT extension and hit ENTER ( you can create your own files )
+
 <img width="203" height="527" alt="image" src="https://github.com/user-attachments/assets/2d808126-842c-4783-adfd-f797ab6ff9a4" />
 
-4) For example I type : BUBBLE and hit ENTER key
+7) For example I type : BUBBLE and hit ENTER key
+
 <img width="454" height="284" alt="Screenshot 2025-11-29 145505" src="https://github.com/user-attachments/assets/82fdd43e-4bf5-4f74-8d61-b484262540bc" />
 
-5) If The bot disappear from the top left corner that means the file exist and it will start running int the background (you can see in your system tray )
+9) If The bot disappear from the top left corner that means the file exist and it will start running int the background (you can see in your system tray )
+    
 <img width="543" height="270" alt="Screenshot 2025-11-29 145537" src="https://github.com/user-attachments/assets/da3462fc-910d-40cd-a87e-5e17eafd7c38" />  
 
-6) The bot will now read all the lines from bubble sort file
+10) The bot will now read all the lines from bubble sort file
+    
 <img width="607" height="790" alt="image" src="https://github.com/user-attachments/assets/0ff55f7b-fa4a-419a-ae89-85c90be598a9" />
 
-7) Now open a temporary empty file 
+11) Now open a temporary empty file
+    
 <img width="609" height="543" alt="Screenshot 2025-11-29 145646" src="https://github.com/user-attachments/assets/3c2217ae-083b-4183-828d-92245b0e5854" />
 
-8) Now press the HOTKEY : F8 OR (fn + F8) AND SEE THE MAGIC
+12) Now press the HOTKEY : F8 OR (fn + F8) AND SEE THE MAGIC
+    
 <img width="579" height="565" alt="Screenshot 2025-11-29 145637" src="https://github.com/user-attachments/assets/c6d0f2cb-acf2-4bfe-a669-23f02eb3c193" />
 
 The bot will now write the code line by line everytime you hit the F8 key and to exit the bot You can EITHER press F10 or (Fn + F10 ) HOTKEY or just 
