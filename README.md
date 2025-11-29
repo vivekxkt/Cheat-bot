@@ -87,7 +87,7 @@ OR
 
 <img width="454" height="284" alt="Screenshot 2025-11-29 145505" src="https://github.com/user-attachments/assets/82fdd43e-4bf5-4f74-8d61-b484262540bc" />
 
-9) If The bot disappear from the top left corner that means the file exist and it will start running int the background (you can see in your system tray )
+9) If The bot disappear from the top left corner that means the file exist and it will start running in the background with name [ GPU inactive ] (you can see in your system tray )
     
 <img width="543" height="270" alt="Screenshot 2025-11-29 145537" src="https://github.com/user-attachments/assets/da3462fc-910d-40cd-a87e-5e17eafd7c38" />  
 
