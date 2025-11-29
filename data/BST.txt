@@ -1,0 +1,111 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node *left;
+    struct Node *right;
+};
+
+// Create a new node
+struct Node* createNode(int value) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = value;
+    newNode->left = newNode->right = NULL;
+    return newNode;
+}
+
+// Insert into BST
+struct Node* insert(struct Node* root, int value) {
+    if (root == NULL) {
+        return createNode(value);
+    }
+
+    if (value < root->data)
+        root->left = insert(root->left, value);
+    else if (value > root->data)
+        root->right = insert(root->right, value);
+
+    return root;
+}
+
+// Inorder Traversal (L R R)
+void inorder(struct Node* root) {
+    if (root == NULL) return;
+    inorder(root->left);
+    printf("%d ", root->data);
+    inorder(root->right);
+}
+
+// Preorder Traversal (R L R)
+void preorder(struct Node* root) {
+    if (root == NULL) return;
+    printf("%d ", root->data);
+    preorder(root->left);
+    preorder(root->right);
+}
+
+// Postorder Traversal (L R R)
+void postorder(struct Node* root) {
+    if (root == NULL) return;
+    postorder(root->left);
+    postorder(root->right);
+    printf("%d ", root->data);
+}
+
+// Search in BST
+struct Node* search(struct Node* root, int key) {
+    if (root == NULL || root->data == key)
+        return root;
+
+    if (key < root->data)
+        return search(root->left, key);
+
+    return search(root->right, key);
+}
+
+// Find minimum node (used in deletion)
+struct Node* findMin(struct Node* root) {
+    while (root->left != NULL)
+        root = root->left;
+    return root;
+}
+
+int main() {
+    struct Node* root = NULL;
+
+    // Insert values
+    root = insert(root, 50);
+    insert(root, 30);
+    insert(root, 70);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 60);
+    insert(root, 80);
+
+    printf("\nInorder   : ");
+    inorder(root);
+
+    printf("\nPreorder  : ");
+    preorder(root);
+
+    printf("\nPostorder : ");
+    postorder(root);
+
+    // Search example
+    struct Node* found = search(root, 40);
+    if (found)
+        printf("\n\n40 found in BST");
+    else
+        printf("\n\n40 not found");
+
+    // Delete example
+    root = deleteNode(root, 70);
+
+    printf("\n\nAfter deleting 70:\nInorder : ");
+    inorder(root);
+
+    printf("\n");
+
+    return 0;
+}

@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+    FILE *fp1, *fp2;
+    char ch;
+    int wordCount = 0;
+    int inWord = 0;
+
+    // Open source file
+    fp1 = fopen("input.txt", "r");
+    if (fp1 == NULL) {
+        printf("Cannot open input.txt\n");
+        exit(0);
+    }
+
+    // Open destination file
+    fp2 = fopen("output.txt", "w");
+    if (fp2 == NULL) {
+        printf("Cannot open output.txt\n");
+        exit(0);
+    }
+
+    // Read characters one by one
+    while ((ch = fgetc(fp1)) != EOF) {
+
+        // Count words
+        if (isspace(ch)) {
+            inWord = 0;
+        } else if (inWord == 0) {
+            inWord = 1;
+            wordCount++;
+        }
+
+        // Copy to output file
+        fputc(ch, fp2);
+    }
+
+    fclose(fp1);
+    fclose(fp2);
+
+    printf("Words in file: %d\n", wordCount);
+    printf("File copied to output.txt successfully.\n");
+
+    return 0;
+}
